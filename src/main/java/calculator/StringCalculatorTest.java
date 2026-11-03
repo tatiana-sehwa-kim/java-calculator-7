@@ -9,30 +9,12 @@ public class StringCalculatorTest {
         System.out.println("덧셈할 문자열을 입력해 주세요.");
         String input = Console.readLine();
 
-        int result = calculate(input);
+        int result = stringCalculator(input);
         System.out.println("결과 : {" + result + "}");
 
     }
 
-    private static int calculate(String input) {
-
-        if (input == null || input.isEmpty()){
-            return 0;
-        }
-
-        if (input.startsWith("//")) {
-            return customDelimiter(input);
-        }
-
-        String[] arr = input.split(",|:");
-        int sum = 0;
-        for (String s : arr) {
-            sum += Integer.parseInt(s);
-        }
-        return sum;
-    }
-
-    private static int customDelimiter(String input) {
+    private static int stringCalculator(String input) {
         return 0;
     }
 }
