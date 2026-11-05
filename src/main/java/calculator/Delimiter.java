@@ -8,9 +8,8 @@ public class Delimiter {
 
     static int calculate(String input) {
 
+        String[] arr = input.split(",|:");
+        return Sum.sum(arr);
 
-
-
-        return 0;
     }
 }
